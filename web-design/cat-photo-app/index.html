@@ -3,48 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CatPhotoApp</title>
 </head>
 <body>
 
-    <div class="flex-container">
-        <div class="first">
-            <div class="item one"></div>
-            <div class="item two">
-                <div class="item-two child"></div>
-                <div class="item-two child"></div>
-            </div>
-            <div class="item three"></div>
 
-        </div>
+    <main>
 
-        <div class="second">
+    <h1>CatPhotoApp</h1>
 
-            <div class="second-item one"></div>
+    <section>
+        <!--Comments here-->
+        <h2>Cat Photos</h2>
+        <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+        <a href="#">
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+        </a>
+    </section>
 
-            <div class="wrapper">
-                <div class="second-item two"></div>
-                <div class="second-item three"></div>
-            </div>
-
-
-
-        </div>
-
-
-        <div class="third">
-            <div class="third-item one"></div>
-            <div class="third-item two"></div>
-            <div class="third-item three"></div>
-            <div class="third-item four"></div>
-        </div>
+    <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="a picture of a lasagna">
+            <figcaption>Cats <em>love</em> lasagna</figcaption>
+        </figure>
 
 
-    </div>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="group of cats">
+            <figcaption>Cats <strong>hate</strong>other cats.</figcaption>
+        </figure>
+
+
+    </section>
+
+    <section>
+        <h2>Cat Form</h2>
+        <form action="#">
+
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input type="radio" name="indoor-outdoor" value="indoor" id="indoor">Indoor</label>
+                <label><input type="radio" name="indoor-outdoor" value="outdoor" id="outdoor">Outdoor</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input type="checkbox" name="personality" id="loving" value="loving"> <label for="loving">Loving</label>
+                <input type="checkbox" name="personality" id="lazy" value="lazy"> <label for="lazy">Lazy </label>
+                <input type="checkbox" name="personality" id="energetic" value="enegetic"> <label for="energetic">Energetic</label>
+            </fieldset>
+
+
+            <input type="text" placeholder="cat photo URL" name="catphotourl">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
 
 
-    
+
+    </main>
+
+
+    <footer>
+        <p>No Copyright - <a href="#">freeCodeCamp.org</a></p>
+    </footer>
+
 </body>
 </html>
