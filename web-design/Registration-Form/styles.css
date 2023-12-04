@@ -1,10 +1,38 @@
 body{
-    background-color: #1b1b32;
+    background-color: #1B1B32;
     color: #f5f6f7;
-    width: 100%;
+    margin: 0;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
+    width: 100%;
+    font-size: 16px;
 }
+
 
 label{
     display: block;
+    margin: 0.5rem 0; /* 0.5 rem = 8px because html font size is 16px */
+}
+
+h1, p{
+    text-align: center;
+    margin: 1em 0; /*h1 has 32px as its top and bottom margin while p has 16px because the size of the element itself matters not only the font*/
+}
+
+
+form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: 0;
+    padding: 2rem 0; /*2rem = 32px*/
+    border-bottom: 4px solid #3B3B4F;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
 }
