@@ -1,38 +1,73 @@
 body{
-    background-color: #1B1B32;
-    color: #f5f6f7;
+    background-color:  #1b1b32;
+    color: white;
     margin: 0;
     font-family:  Tahoma, Geneva, Verdana, sans-serif;
-    height: 100vh;
-    width: 100%;
-    font-size: 16px;
 }
 
 
 label{
     display: block;
-    margin: 0.5rem 0; /* 0.5 rem = 8px because html font size is 16px */
+    margin: 0.5rem 0;
 }
 
-h1, p{
+h1,p{
+    margin: 1rem auto;
     text-align: center;
-    margin: 1em 0; /*h1 has 32px as its top and bottom margin while p has 16px because the size of the element itself matters not only the font*/
 }
-
 
 form{
+    margin: 0 auto;
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
-    margin: 0 auto;
 }
+
+input,textarea,select{
+    width: 100%;
+    margin: 10px 0;
+    min-height: 2em;
+   
+}
+
+input, textarea{
+    background-color: #0a0a23;
+    border: #0a0a23;
+    color: white;
+}
+
+.inline{
+   width: unset;
+   vertical-align: middle;
+   margin: 0  0.5em 0 0;
+}
+
 
 fieldset{
     border: 0;
-    padding: 2rem 0; /*2rem = 32px*/
-    border-bottom: 4px solid #3B3B4F;
+    border-bottom: 1px solid #3b3b4f;
+    padding: 2rem 0;
 }
 
-fieldset:last-of-type{
-    border-bottom: none;
+
+input[type="submit"]
+{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+
+input[type="file"]
+{
+    padding: 1px 2px;
+}
+
+a{
+    color: white;
 }
